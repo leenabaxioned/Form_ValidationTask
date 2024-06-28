@@ -1,40 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
-
-<head>
-  <meta charset="utf-8">
-  <title>Client</title>
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Validation task</title>
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
-  <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-</head>
-<body>
-  <!--container start-->
-  <div class="container">
-    <!--header section start-->
-    <header>
-    </header>
-    <!--header section start-->
-    <!--main section start-->
-    <main>
-    </main>
-    <!--main section end-->
-    <!--footer section start-->
-    <footer>      
-    </footer>
-    <!--footer section end-->
-  </div>
-  <!--container end-->
-  <script src="assets/js/script.js"></script>
-</body>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--font-awesome link for icons-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/font-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header></header>
+      <!--header section start-->
+      <!--main section start-->
+      <main>
+        <section class="main">
+          <div class="wrapper">
+            <h1>CRUD Operations with Local Storage</h1>
+            <form id="myForm">
+              <div class="formcontent">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" />
+                <span class="firsterror error">*Please Enter Firstname</span>
+              </div>
+              <div class="formcontent">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" />
+                <span class="lasterror error">*Please Enter Lastname</span>
+              </div>
+              <div class="formcontent">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" />
+                <span class="addresserror error">*Please Enter Address</span>
+              </div>
+              <div class="formcontent">
+                <label>Gender:</label>
+                <div class="gendercontent male">
+                  <input type="radio" name="gender" id="male" value="male" />
+                  <label for="male">Male</label>
+                </div>
+                <div class="gendercontent female">
+                  <input
+                    type="radio"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+                <div class="gendercontent other">
+                  <input type="radio" name="gender" id="other" value="other" />
+                  <label for="other">Other</label>
+                </div>
+                <span class="gendererror error">*Please Select Gender</span>
+              </div>
+              <button class="submit" type="submit">Submit</button>
+            </form>
+            <div id="tasks">
+              <h2>Entered Data:</h2>
+              <ul id="taskList"></ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--main section end-->
+      <!--footer section start-->
+      <footer></footer>
+      <!--footer section end-->
+    </div>
+    <!--container end-->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
