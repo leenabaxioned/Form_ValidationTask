@@ -83,7 +83,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a { 
@@ -99,7 +99,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 100%; 
   margin: 0 auto;
 }
 /*=================================
@@ -113,7 +113,121 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+h1,
+h2 { 
+  color: #2cd3bf;
+  text-align: center; 
+}
 
+h2 { color: #b2e0db; }
+
+.formcontent label { 
+  color: #6e1350; 
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.gendercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+#myForm {
+  display: grid;
+  gap: 10px;
+  width: 25%;
+  height: auto;
+  padding: 40px;
+  margin: 0 auto;
+  border: 1px solid aquamarine;
+  border-radius: 17px;
+  background-color: #1fc8db;
+  background-image: linear-gradient(140deg, #c3e0dd 0%, #b2e0db 50%, #6fd8cc 75%);
+}
+
+#myForm .formcontent { 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.formcontent input{
+  padding: 10px 20px;
+  margin: 10px 0 5px;
+  border: 1px solid #ccc;
+  background-color: #f7f3f3;
+}
+
+.gendercontent input { margin: 0; }
+button { cursor: pointer }
+
+.submit {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  background-color: #570f3f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.5s all;
+}
+
+.submit:hover {
+  border: 1px solid #570f3f;
+  background-color: #fff;
+  color: #570f3f;
+}
+
+#myForm div:nth-child(4) { 
+  flex-direction: row;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.error {
+  display: none;
+  color: rgb(245, 2, 2);
+  font-size: 12px;
+}
+
+.error.active {
+  display: block;
+}
+
+#tasks {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #570f3f;
+  color: #b2e0db;
+  font-size: 15px;
+}
+
+.btn {
+  padding: 3px 10px;
+  border: 1px solid transparent;
+  background-color: #b2e0db;
+  color: #570f3f;
+  transition: 0.5s all;
+}
+
+.btn:hover {
+  border: 1px solid #b2e0db;
+  background-color: #570f3f;
+  color: #b2e0db;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px dotted #b2e0db;
+}
+
+#taskList { width: 30%; }
 /*=================================
   main styling ends here
 =================================*/
