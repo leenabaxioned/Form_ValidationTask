@@ -115,7 +115,9 @@ li {
 =================================*/
 h1,
 h2 { 
+  padding: 20px 0;
   color: #2cd3bf;
+  font-size: 25px;
   text-align: center; 
 }
 
@@ -227,7 +229,7 @@ button { cursor: pointer }
   border-bottom: 1px dotted #b2e0db;
 }
 
-#taskList { width: 30%; }
+/* #taskList { width: 30%; } */
 /*=================================
   main styling ends here
 =================================*/
