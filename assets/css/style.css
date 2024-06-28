@@ -222,14 +222,14 @@ button { cursor: pointer }
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 5px 0;
   border-bottom: 1px dotted #b2e0db;
 }
 
-/* #taskList { width: 30%; } */
+#taskList {
+  display: flex;
+  flex-direction: column;
+}
 /*=================================
   main styling ends here
 =================================*/
